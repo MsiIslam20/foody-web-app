@@ -1,0 +1,13 @@
+.foods-container{
+    padding-top: 80px;
+}
+.foods-container ul li{
+    display: inline-block;
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0px 15px;
+}
+.foods-container ul li:hover{
+    color: red;
+}
