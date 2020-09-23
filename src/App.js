@@ -1,9 +1,20 @@
 import React from 'react';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Header from './components/Header/Header';
 
 function App() {
   return (
-    <h3>Web app!!!</h3>
+    <>
+      <Router>
+        <Header></Header>
+      </Router>
+    </>
   );
 }
 
