@@ -10,15 +10,23 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Foods from './components/Foods/Foods';
 import Features from './components/Features/Features';
+import SingleFood from './components/SingleFood/SingleFood';
 
 function App() {
   return (
     <>
       <Router>
         <Header />
-        <Home />
-        <Foods />
-        <Features />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+            <Foods />
+            <Features />
+          </Route>
+          <Route path="/food/:id">
+            <SingleFood />
+          </Route>        
+        </Switch>        
       </Router>
     </>
   );

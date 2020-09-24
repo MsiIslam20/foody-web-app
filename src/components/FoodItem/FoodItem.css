@@ -1,8 +1,10 @@
 .food-item .card{
     border: none;
+    transition: all .3s;
+    cursor: pointer;
 }
 .food-item .card:hover{
-    box-shadow: 0 5px 13px 0 rgba(234,232,232,.48);
+    box-shadow: 0 10px 24px 20px rgb(234 232 232 / 30%);
 }
 .food-item .card p{
     color: #a29e9e;

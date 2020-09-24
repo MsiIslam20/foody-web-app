@@ -8,6 +8,14 @@
     font-weight: 600;
     padding: 0px 15px;
 }
-.foods-container ul li:hover{
+.foods-container ul li span.active{
     color: red;
+}
+.foods-container ul li span.active::after{
+    content: "";
+    width: 80%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #ff4565;
+    display: block;
 }
