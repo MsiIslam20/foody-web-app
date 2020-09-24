@@ -8,7 +8,7 @@ firebase.initializeApp(firebaseConfig);
 const SignUp = () => {
     return (
         <div>
-            <h1></h1>
+            <h1>This is Sign up page</h1>
         </div>
     );
 };
