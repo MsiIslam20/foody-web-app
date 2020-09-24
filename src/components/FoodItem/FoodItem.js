@@ -8,9 +8,9 @@ const FoodItem = (props) => {
     return (
         <div className="col-md-4 mb-5">
             <div className="food-item">
-                <div class="card text-center">
-                    <img src={img} alt="" class="card-img-top" />
-                    <div class="card-body">
+                <div className="card text-center">
+                    <img src={img} alt="" className="card-img-top" />
+                    <div className="card-body">
                         <h5>{title}</h5>
                         <p>{subtitle}</p>
                         <h4>${price}</h4>
