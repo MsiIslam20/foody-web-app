@@ -1,5 +1,5 @@
 .single-food-home{
-    margin-top: 150px;
+    margin-top: 130px;
 }
 .food-details p{
     color: #a29e9e;
@@ -8,6 +8,7 @@
 }
 .add-btn{
     margin-top: 40px;
+    padding: 12px 30px;
 }
 .cart-controller {
     border-radius: 25px;

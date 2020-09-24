@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import foodData from '../../fakedata/foodData';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './SingleFood.css'
 
 const SingleFood = () => {
@@ -23,7 +25,7 @@ const SingleFood = () => {
                                 <button className="btn">+</button>
                             </div>
                         </div>
-                        <button className="add-btn btn btn-danger btn-rounded">Add</button>
+                        <button className="add-btn btn btn-danger btn-rounded"><FontAwesomeIcon icon={faShoppingCart} /> Add</button>
                     </div>
                 </div>
                 <div className="col-md-6">

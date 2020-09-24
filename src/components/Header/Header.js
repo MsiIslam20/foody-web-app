@@ -1,7 +1,9 @@
 import React from 'react';
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Link } from 'react-router-dom';
-import logo from '../../images/logo.png'
+import logo from '../../images/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './Header.css';
 
 const Header = () => {
@@ -18,6 +20,9 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">                    
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item active">
+                                <a className="nav-link" href="#0"><FontAwesomeIcon icon={faShoppingCart} /><span className="badge bg-light">0</span></a>
+                            </li>                            
+                            <li className="nav-item">
                                 <a className="nav-link" href="#0">Log In</a>
                             </li>
                             <li className="nav-item">
