@@ -14,7 +14,7 @@ const Foods = () => {
                     <li>Lunch</li>
                     <li>Dinner</li>
                 </ul>
-                <div className="row">
+                <div className="row my-5">
                     {
                         foods.map(food => <FoodItem food={food} key={food.id}></FoodItem>)
                     }

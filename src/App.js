@@ -9,6 +9,7 @@ import {
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Foods from './components/Foods/Foods';
+import Features from './components/Features/Features';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Header />
         <Home />
         <Foods />
+        <Features />
       </Router>
     </>
   );
