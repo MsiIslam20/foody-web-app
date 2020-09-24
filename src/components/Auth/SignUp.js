@@ -9,8 +9,12 @@ if(firebase.apps.length === 0){
 
 const SignUp = () => {
     return (
-        <div>
-            <h1>This is Sign up page!!</h1>
+        <div className="container">
+            <div className="row">
+                <div className="col-md-12">
+                    <h1>This is Sign up page!!</h1>
+                </div>
+            </div>
         </div>
     );
 };
