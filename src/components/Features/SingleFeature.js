@@ -1,5 +1,5 @@
 import React from 'react';
-import './Feature.css';
+import './Feature.css'
 
 const SingleFeature = (props) => {
     const {title, description} = props.feature;
