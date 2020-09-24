@@ -1,0 +1,16 @@
+import React from 'react';
+import * as firebase from "firebase/app";
+import "firebase/auth";
+import firebaseConfig from './firebase.config';
+
+firebase.initializeApp(firebaseConfig);
+
+const SignUp = () => {
+    return (
+        <div>
+            
+        </div>
+    );
+};
+
+export default SignUp;
