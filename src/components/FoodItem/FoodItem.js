@@ -4,7 +4,6 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import './FoodItem.css'
 
 const FoodItem = (props) => {
-    console.log(props);
     const {title, subtitle, price, img, id} = props.food;
 
     let history = useHistory();
