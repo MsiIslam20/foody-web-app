@@ -11,6 +11,7 @@ import Home from './components/Home/Home';
 import Foods from './components/Foods/Foods';
 import Features from './components/Features/Features';
 import SingleFood from './components/SingleFood/SingleFood';
+import SignUp from './components/Auth/SignUp';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
             <Foods />
             <Features />
           </Route>
+          <Route path="/signup">
+            <SignUp />
+          </Route>  
           <Route path="/food/:id">
             <SingleFood />
           </Route>        

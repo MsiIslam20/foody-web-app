@@ -11,7 +11,7 @@ const SignUp = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md-12">
+                <div className="col-md-12 mt-5">
                     <h1>This is Sign up page</h1>
                 </div>
             </div>
