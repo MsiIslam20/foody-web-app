@@ -1,10 +1,19 @@
 .sign-up-wrapper{
     background: url(../../images/signup-bg.png) no-repeat scroll;
     background-size: cover;
+    min-height: 100vh;
 }
 .sign-up-form{
-    padding-top: 90px;
-    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.mt{
+    color: #ff4565;
+    cursor: pointer;
+    font-weight: 400;
+}
+.mt:hover{
+    text-decoration: underline;
 }
 .sign-up-form .form-control{
     background: #f1f1f1;
@@ -12,7 +21,7 @@
     padding: 28px 20px;
     margin-bottom: 15px;
 }
-.logo{
+.sign-up-form .logo{
     text-align: center;
     margin-bottom: 30px;
 }

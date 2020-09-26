@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Signup.css';
 import logo from '../../images/logo.png'
 import * as firebase from "firebase/app";
@@ -10,6 +10,8 @@ if(firebase.apps.length === 0){
 }
 
 const SignUp = () => {
+    const [signedInUser, setSignedInUser] = useState(false);
+
     return (
         <div className="sign-up-wrapper">
             <div className="container">
@@ -22,13 +24,17 @@ const SignUp = () => {
                                         <img src={logo} alt="" className="img-fluid"/>
                                     </div>
                                     <form>
-                                        <input className="form-control" type="text" name="name" id="" placeholder="Name"/>
-                                        <input className="form-control" type="email" name="email" id="" placeholder="Email address"/>
-                                        <input className="form-control" type="password" name="password" id="" placeholder="Password" />
-                                        <input className="form-control" type="password" name="confirmPassword" id="" placeholder="Confirm Password"/>
-                                        <input type="submit" className="w-100 submit-btn btn btn-danger" value="Sign Up"/>
+                                        {
+                                            signedInUser && <input className="form-control" type="text" name="name" id="" placeholder="Name" required/>
+                                        }
+                                        <input className="form-control" type="email" name="email" id="" placeholder="Email address" required/>
+                                        <input className="form-control" type="password" name="password" id="" placeholder="Password" required/>
+                                        {
+                                            signedInUser && <input className="form-control" type="password" name="confirmPassword" id="" placeholder="Confirm Password"/>
+                                        }
+                                        <input type="submit" className="w-100 submit-btn btn btn-danger" value={signedInUser ? "Sign Up" : "Log In"}/>
                                     </form>
-                                    <p>Already have an account</p>
+                                    <p className="text-center mt-2 mb-0">{signedInUser ? 'Already have an account?' : "Don't have an account?"} <span className="text-danger pointer mt"  onClick={() => setSignedInUser(!signedInUser)}>{signedInUser ? 'Log in' : 'Sign Up'}</span></p>
                                 </div>
                             </div>
                         </div>
