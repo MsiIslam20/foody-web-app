@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -12,14 +12,19 @@ import Foods from './components/Foods/Foods';
 import Features from './components/Features/Features';
 import SingleFood from './components/SingleFood/SingleFood';
 import SignUp from './components/Auth/SignUp';
+import Chekout from './components/Checkout/Chekout';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+
+export const UserContext = createContext();
 
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
-        <Header />
         <Switch>
           <Route exact path="/">
+            <Header />
             <Home />
             <Foods />
             <Features />
@@ -27,12 +32,17 @@ function App() {
           <Route path="/signup">
             <SignUp />
           </Route>  
+          <PrivateRoute path="/checkout">
+            <Header />
+            <Chekout />
+          </PrivateRoute>
           <Route path="/food/:id">
+            <Header />
             <SingleFood />
           </Route>        
         </Switch>        
       </Router>
-    </>
+    </UserContext.Provider>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import foodData from '../../fakedata/foodData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
@@ -9,6 +9,11 @@ const SingleFood = () => {
     const {id} = useParams();
     const product = foodData.filter(place => place.id === parseInt(id));
     const {title, description, price, img} = product[0];
+
+    let history = useHistory();
+    const handleClick = () => {
+        history.push(`/checkout`)
+    }
 
     return (
         <div className="container single-food-home">
@@ -25,7 +30,7 @@ const SingleFood = () => {
                                 <button className="btn">+</button>
                             </div>
                         </div>
-                        <button className="add-btn btn btn-danger btn-rounded"><FontAwesomeIcon icon={faShoppingCart} /> Add to Cart</button>
+                        <button onClick={handleClick} className="add-btn btn btn-danger btn-rounded"><FontAwesomeIcon icon={faShoppingCart} /> Add to Cart</button>
                     </div>
                 </div>
                 <div className="col-md-6">
