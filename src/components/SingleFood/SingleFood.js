@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import foodData from '../../fakedata/foodData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,9 +10,10 @@ const SingleFood = () => {
     const product = foodData.filter(place => place.id === parseInt(id));
     const {title, description, price, img} = product[0];
 
+
     let history = useHistory();
     const handleClick = () => {
-        history.push(`/checkout`)
+        
     }
 
     return (
