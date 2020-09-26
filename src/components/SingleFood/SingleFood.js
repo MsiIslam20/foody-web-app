@@ -10,9 +10,7 @@ const SingleFood = () => {
     const product = foodData.filter(place => place.id === parseInt(id));
     const {title, description, price, img} = product[0];
 
-
-    let history = useHistory();
-    const handleClick = () => {
+    const handleClick = (currentFood) => {
 
     }
 
