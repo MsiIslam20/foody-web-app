@@ -25,7 +25,7 @@ const SingleFood = () => {
                                 <button className="btn">+</button>
                             </div>
                         </div>
-                        <button className="add-btn btn btn-danger btn-rounded"><FontAwesomeIcon icon={faShoppingCart} /> Add</button>
+                        <button className="add-btn btn btn-danger btn-rounded"><FontAwesomeIcon icon={faShoppingCart} /> Add to Cart</button>
                     </div>
                 </div>
                 <div className="col-md-6">
