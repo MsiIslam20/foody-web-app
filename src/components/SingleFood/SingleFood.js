@@ -13,7 +13,7 @@ const SingleFood = () => {
 
     let history = useHistory();
     const handleClick = () => {
-        
+
     }
 
     return (
@@ -31,7 +31,7 @@ const SingleFood = () => {
                                 <button className="btn">+</button>
                             </div>
                         </div>
-                        <button onClick={handleClick} className="add-btn btn btn-danger btn-rounded"><FontAwesomeIcon icon={faShoppingCart} /> Add to Cart</button>
+                        <button onClick={handleClick} className="add-btn btn btn-danger btn-rounded"><FontAwesomeIcon icon={faShoppingCart} /> Add to Cart </button>
                     </div>
                 </div>
                 <div className="col-md-6">
