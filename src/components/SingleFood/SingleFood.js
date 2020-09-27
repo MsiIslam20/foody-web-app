@@ -11,7 +11,7 @@ const SingleFood = () => {
     const {title, description, price, img} = product[0];
 
     const handleClick = (currentFood) => {
-        //Function will be here...
+        //Function will be
     }
 
     return (
