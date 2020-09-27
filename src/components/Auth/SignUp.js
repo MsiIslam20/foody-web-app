@@ -13,7 +13,7 @@ const SignUp = () => {
         error: '',
         email: '',
         password: '',
-        confirmPassword: '',
+        confirmPassword: ''
     });
 
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -40,6 +40,7 @@ const SignUp = () => {
         }
     }
 
+    //Sign Up With Email and Password
     const handleSubmit = (e) => {
         if(signedInUser && user.email && user.password){
             if(user.password === user.confirmPassword){
@@ -52,7 +53,7 @@ const SignUp = () => {
             }
             else{
                 const newUserInfo = {...user};
-                newUserInfo.error = "password not match";
+                newUserInfo.error = "password not match!!!";
                 setUser(newUserInfo);
             }
         }
