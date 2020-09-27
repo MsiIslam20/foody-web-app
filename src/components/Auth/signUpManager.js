@@ -8,8 +8,6 @@ export const initializeLogInFramework = () => {
     }
 }
 
-
-
 export const createUserWithEmailPassword = (name, email, password) => {
     
     return firebase.auth().createUserWithEmailAndPassword(email, password)
