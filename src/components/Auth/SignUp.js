@@ -13,7 +13,7 @@ const SignUp = () => {
         error: '',
         email: '',
         password: '',
-        confirmPassword: ''
+        confirmPassword: '',
     });
 
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
