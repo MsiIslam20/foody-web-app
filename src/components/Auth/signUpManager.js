@@ -44,5 +44,4 @@ const updateUserName = name => {
     }).catch(function(error) {
       // An error happened.
     });
-
 }
