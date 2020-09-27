@@ -17,8 +17,8 @@ export const createUserWithEmailPassword = (name, email, password) => {
       return newUserInfo;
     })
     .catch(error => {
-      // Handle Errors here.
-      const newUserInfo = {}
+      const newUserInfo = {};
+      console.log(error);
       return newUserInfo;
     });
 }
