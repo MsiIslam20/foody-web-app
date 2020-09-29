@@ -95,7 +95,7 @@ const SignUp = () => {
                                         }
                                         <input type="submit" className="w-100 submit-btn btn btn-danger" value={signedInUser ? "Sign Up" : "Log In"}/>
                                     </form>
-                                    <p className="text-center mt-2 mb-0">{signedInUser ? 'Already have an account?' : "Don't have= an account?"} <span className="text-danger pointer mt"  onClick={() => setSignedInUser(!signedInUser)}>{signedInUser ? 'Log In' : 'Sign Up'}</span></p>
+                                    <p className="text-center mt-2 mb-0">{signedInUser ? 'Already have an account?' : "Don't have an account?"} <span className="text-danger pointer mt"  onClick={() => setSignedInUser(!signedInUser)}>{signedInUser ? 'Log In' : 'Sign Up'}</span></p>
                                 </div>
                             </div>
                         </div>
