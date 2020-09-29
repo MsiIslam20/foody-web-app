@@ -20,7 +20,7 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">                    
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#0"><FontAwesomeIcon icon={faShoppingCart} /><span className="badge bg-light">1</span></a>
+                                <a className="nav-link" href="#0"><FontAwesomeIcon icon={faShoppingCart} /><span className="badge bg-light">0</span></a>
                             </li>                            
                             <li className="nav-item">
                                 <a className="nav-link" href="#0">Log In</a>
